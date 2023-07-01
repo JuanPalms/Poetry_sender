@@ -1,0 +1,18 @@
+name: poetry_env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python = 3.10.9
+  - pip
+  - pyyaml
+  - numpy
+  - pandas
+  - beautifulsoup4
+  - lxml
+  - requests
+  - jupyterlab
+  - selenium
+  - schedule
+  - yagmail
+  - premailer
