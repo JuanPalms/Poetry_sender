@@ -18,9 +18,9 @@ title, author, poem = scrap_poem()
 ### Logging keys
 loggin_keys = load_config('logging_key.yaml')
 
-sender = 'palmeros.scrapp@gmail.com'
+sender = loggin_keys['logging_mail']
 
-receiver = 'juanfrancisco.palmeros@outlook.com'
+receiver = loggin_keys['receiver']
 
 subject = "Daily poem"
 
