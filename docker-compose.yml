@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  my-poetry-env:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    ports:
+      - "8889:8888"
+    command: python ./mail_sending/send_mail.py

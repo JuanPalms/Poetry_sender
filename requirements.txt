@@ -1,0 +1,12 @@
+pyyaml
+numpy
+pandas
+beautifulsoup4
+lxml
+requests
+jupyterlab
+selenium
+schedule
+yagmail
+premailer
+
