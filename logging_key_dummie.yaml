@@ -1,0 +1,5 @@
+# Email
+logging_mail: "sender_mail@gmail.com"
+logging_key: "your_mail_password_here"
+app_password_mail: "your_google_app_password"
+receivers_list: ['insert in this list some receivers']
