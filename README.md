@@ -1,28 +1,31 @@
-# Poetry sender
+# Poetry Sender
 
-This project involves a web scraping process of the website www.poetryfoundation.org , which extracts a random poem and sends it by email to the address specified by the user in the logging_keys.yaml configuration file. The project is designed to work in a Conda environment created through a bash script and two Python scripts that automate the process of creating the Conda environment, web scraping the poem, and automatically sending the email with the random poem.
+This project involves web scraping from the website www.poetryfoundation.org. It extracts a random poem and sends it via email to the address specified by the user in the logging_keys.yaml configuration file. The project is designed to operate within a Conda environment, set up through a bash script, and supported by two Python scripts. These scripts automate the processes of creating the Conda environment, scraping the poem, and sending the email containing the random poem.
 
 ## Repository structure
 
-``` bash 
-├── config.yaml # Environment variables that are used in the scripting process
-├── environments.yaml # conda environment setting
-├── logging_key.yaml # Add a logging_key.yaml for project replicability
+```bash
+├── config.yaml # Environment variables used in the scripting process
+├── environments.yaml # Conda environment settings
+├── logging_keys.yaml # Add a logging_keys.yaml for project replicability
 ├── mail_sending
-│   └── send_mail.py # Automates the mailing process with python
-├── outils.py # Defines global functions
-├── poetry_sender.sh # Bash script for running the complet project
-├── README.md 
-└── web_scrapping 
-    └── scrapp_poems.py # Automates the random choice of the poem
+│   └── send_mail.py # Automates the email-sending process with Python
+├── utils.py # Defines global functions (Note: "outils" is French for "tools", but "utils" is more conventional in English codebases.)
+├── poetry_sender.sh # Bash script for running the complete project
+├── README.md
+└── web_scraping
+    └── scrape_poems.py # Automates the random selection of a poem
 ```
 
 ## Demo
 
-1) Download google driver
-2) Provide a gmail accountto send an receive the mails
-3) Fill the images folder with the join image you want to send
-4) Execute the python module send_mail.py
- 
+1. Download Google Drive.
+2. Provide a Gmail account to send and receive emails.
+3. Populate the images folder with the desired image you wish to send.
+4. Execute the Python module send_mail.py.
+
 ![](https://github.com/JuanPalms/Poetry_sender/blob/main/GIF.gif)
 
+After execution, the recipients on your receivers list will receive a romantic poem:
+
+![Romantic Scraped Mail](result.png)
